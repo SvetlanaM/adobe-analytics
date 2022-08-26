@@ -88,6 +88,7 @@ since, _ = cal.parseDT(datetimeString=str(config['since']))
 until, _ = cal.parseDT(datetimeString=str(config['until']))
 dates = []
 now = since
+
 while now <= until:
 	dates.append(now.strftime("%Y%m%d"))
 	now += datetime.timedelta(hours=1)
